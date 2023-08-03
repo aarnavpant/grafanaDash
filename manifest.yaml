@@ -1,0 +1,11 @@
+---
+applications:
+- name: mygrafana
+  memory: 512M
+  instances: 1
+  random-route: true
+  buildpacks:
+  - https://github.com/SpringerPE/cf-grafana-buildpack.git
+  env:
+    ADMIN_USER: admin
+    ADMIN_PASS: admin
